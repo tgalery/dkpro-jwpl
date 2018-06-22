@@ -80,10 +80,10 @@ public class WikiHibernateUtil implements WikiConstants {
         p.setProperty("hibernate.current_session_context_class","thread");
 
         // Echo all executed SQL to stdout
-        p.setProperty("hibernate.show_sql","true");
+        p.setProperty("hibernate.show_sql","false");
 
         // Update schema
-        p.setProperty("hibernate.hbm2ddl.auto","validate");
+        //p.setProperty("hibernate.hbm2ddl.auto","validate");
 
         // Avoid long running connection acquisition:
         // Important performance fix to obtain jdbc connections a lot faster by avoiding metadata fetching
