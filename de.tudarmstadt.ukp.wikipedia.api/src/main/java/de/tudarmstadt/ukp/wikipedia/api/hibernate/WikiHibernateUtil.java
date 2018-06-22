@@ -80,7 +80,7 @@ public class WikiHibernateUtil implements WikiConstants {
         p.setProperty("hibernate.current_session_context_class","thread");
 
         // Echo all executed SQL to stdout
-        p.setProperty("hibernate.show_sql","false");
+        p.setProperty("hibernate.show_sql","true");
 
         // Update schema
         p.setProperty("hibernate.hbm2ddl.auto","validate");
